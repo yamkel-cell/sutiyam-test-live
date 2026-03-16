@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SutiYam - Accessory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A simple HTML template">
+    <meta name="keywords" content="HTML, template, example">
+    <meta name="author" content="Your Name">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Links -->
+    <link rel="canonical" href="https://www.example.com/">
+    <link rel="alternate" href="https://www.example.com/" hreflang="en">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="googlefont" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/css/font-awesome.min.css">
+    
+    <!-- Stylesheets and Favicon -->
+    <link rel="stylesheet" href="main_styles.css">
+    <link rel="stylesheet" href="accessory.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="helpers.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="icon" href="IMG/Logo/SutiYam_favicon.jpg" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/19fe5fb4d8.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <!-- Header Bar -->
+    <div class="header-wrapper">
+      <div class="header-background" style="background-image: url('IMG/us/Thab.jpg');"></div>
+
+      <div class="logo">
+        <img src="IMG/Logo/SutiYam-Logo.0.jpg" alt="Logo">
+        <div class="slogan"> 
+          SutiYam - Wear Confidence
+        </div>
+      </div>
+
+      <!-- Cart Toggle Icon -->
+      <aside>
+        <a href="Cart.html"> 
+          <span id="cart-count">
+            0
+            <i class="fa fa-shopping-cart cart-toggle-icon" title="Shopping Cart"></i>
+          </span>
+        </a>
+      </aside>
+
+      <div class="nav-bar">
+        <div class="nav-links"><a href="index.html">Home</a></div>
+        <div class="nav-links"><a href="products.html">Product</a></div>
+        <div class="nav-links"><a href="about-us.html">About Us</a></div>
+        <div class="nav-links"><a href="contact-page.html">Contact</a></div>
+      </div>
+    </div>
+
+    <!-- Accessory Section -->
+    <div class="accessory-section">
+      <h1 class="titleCol">Accessories</h1>
+      <p class="subtitle">Complete your look with our exclusive accessories collection.</p>
+      <div class="accessory-container">
+        <div class="accessory-top-section">
+          <div class="accessory-banner">
+            <div class="accessory-banner-text">
+              <h2>The Final Touch of Elegance</h2>
+              <h3>Shoes, Ties, Belts, Shirts, Trousers</h3>
+              <div class="accesso-spacer"></div>
+              <p><strong>Shop Luxury Accessories:</strong> Complement your outfit.</p>
+            </div>
+            <div class="product-card">
+              <img src="img/accessory/IMG-20250206-WA0003.jpg" title="Complement Your Look" alt="Accessories">
+            </div>
+          </div>
+        </div>
+
+        <!-- Product section -->
+        <div class="product-container">
+          <h2 class="titleCol">Complement your Outfit</h2>
+          <div class="product-card-wrapper">
+
+            <!-- Product 1 = Shoes -->
+            <div class="product-card" data-price="420">
+              <img src="IMG/accessory/Shoes/IMG-20250714-WA0006.jpg"
+                data-name="Formal Shoe"
+                alt="High-Quality formal Shoe"
+                id="productImgShoe"
+                data-color-images='{
+                  "Black": "IMG/accessory/Shoes/IMG-20250714-WA0005.jpg",
+                  "Brown": "IMG/accessory/Shoes/IMG-20250714-WA0006.jpg"
+                }'
+                data-thumbnails='["IMG/accessory/Shoes/IMG-20250714-WA0005.jpg", "IMG/accessory/Shoes/IMG-20250714-WA0006.jpg"]'
+                class="open-gallery"
+              />
+              <p>Shoe</p>
+              <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h3>Formal shoe</h3>
+              <h4>R420</h4>
+
+              <div id="ProductDescShoes" class="ProductDesc" style="display: none;">
+                <select id="size-shoe">
+                  <option>Select Size</option>
+                  <option>5</option><option>6</option><option>7</option>
+                  <option>8</option><option>9</option><option>10</option>
+                </select>
+                <select id="color-shoe">
+                  <option>Select Color</option>
+                  <option>Black</option><option>Brown</option>
+                </select>
+                <input type="number" value="1" />
+                <button class="add-to-cart" data-price="420">Add to Cart</button>
+                <h4>Product Details <i class="fa fa-indent"></i></h4>
+                <p>Classic formal shoes — versatile, timeless, and fits any shirt combo.</p>
+              </div>
+              <i class="fa-solid fa-bars menu-icon toggle-btn" data-target="ProductDescShoes"></i>
+            </div>        
+
+            <!-- Product 2 = Tie -->
+            <div class="product-card" data-price="50">
+              <img src="img/accessory/IMG-20250429-WA0014.jpg"
+                data-name="Tie"
+                alt="Tie"
+                id="productImgTie"
+                class="open-gallery"
+              />
+              <p>Tie</p>
+              <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h3>Formal Tie</h3>
+              <h4>R50</h4>
+
+              <div id="ProductDescTie" class="ProductDesc" style="display: none;">
+                <select id="size-tie"><option>Select Size</option><option>N/A</option></select>
+                <select id="color-tie">
+                  <option>Select Color</option>
+                  <option>Red</option><option>Blue</option><option>Black</option>
+                  <option>White</option><option>Green</option><option>Yellow</option>
+                  <option>Pink</option><option>Purple</option><option>Orange</option>
+                </select>
+                <input type="number" value="1" />
+                <button class="add-to-cart" data-price="50">Add to Cart</button>
+                <h4>Product Details <i class="fa fa-indent"></i></h4>
+                <p>Classic formal tie — versatile, timeless, and fits any shirt combo.</p>
+              </div>
+              <i class="fa-solid fa-bars menu-icon toggle-btn" data-target="ProductDescTie"></i>
+            </div>
+
+            <!-- Product 3 = Big Bow Tie -->
+            <div class="product-card" data-price="115">
+              <img src="img/accessory/IMG-20250429-WA0007.jpg"
+                data-name="Big Bow Tie"
+                alt="Big Bow Tie"
+                id="productImgBigBowTie"
+                class="open-gallery"
+              />
+              <p>Bow Tie</p>
+              <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h3>Big Bow Tie</h3>
+              <h4>R115</h4>
+
+              <div id="ProductDescBigBowTie" class="ProductDesc" style="display: none;">
+                <select id="size-BigBowTie"><option>Select Size</option><option>N/A</option></select>
+                <select id="color-BigBowTie">
+                  <option>Select Color</option>
+                  <option>Red</option><option>Blue</option><option>Black</option>
+                  <option>White</option><option>Green</option><option>Yellow</option>
+                  <option>Pink</option><option>Purple</option><option>Orange</option>
+                </select>
+                <input type="number" value="1" />
+                <button class="add-to-cart" data-price="115">Add to Cart</button>
+                <h4>Product Details <i class="fa fa-indent"></i></h4>
+                <p>Classic formal tie — versatile, timeless, and fits any shirt combo.</p>
+              </div>
+              <i class="fa-solid fa-bars menu-icon toggle-btn" data-target="ProductDescBigBowTie"></i>
+            </div>
+
+            <!-- Product 4 = Small Bow Tie -->
+            <div class="product-card" data-price="65">
+              <img src="img/accessory/IMG-20250429-WA0005.jpg"
+                data-name="Small Bow Tie"
+                alt="Small Bow Tie"
+                id="productImgSmallBowTie"
+                class="open-gallery"
+              />
+              <p>Bow Tie</p>
+              <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h3>Small Bow Tie</h3>
+              <h4>R65</h4>
+
+              <div id="ProductDescSmallBowTie" class="ProductDesc" style="display: none;">
+                <select id="size-SmallBowTie"><option>Select Size</option><option>N/A</option></select>
+                <select id="color-SmallBowTie">
+                  <option>Select Color</option>
+                  <option>Red</option><option>Blue</option><option>Black</option>
+                  <option>White</option><option>Green</option><option>Yellow</option>
+                  <option>Pink</option><option>Purple</option><option>Orange</option>
+                </select>
+                <input type="number" value="1" />
+                <button class="add-to-cart" data-price="65">Add to Cart</button>
+                <h4>Product Details <i class="fa fa-indent"></i></h4>
+                <p>Classic formal tie — versatile, timeless, and fits any shirt combo.</p>
+              </div>
+              <i class="fa-solid fa-bars menu-icon toggle-btn" data-target="ProductDescSmallBowTie"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="anchor-button">
+      <div><a href="products.html" class="btn" id="explore-btn"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a></div>
+      <div class="titleCol"><a href="Cart.html" class="btn">Checkout Now <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+
+    <!-- Shared Fullscreen Overlay Gallery -->
+    <div id="gallery" class="fullscreen-gallery">
+      <span class="close-btn">&times;</span>
+      <img id="largeImage" src="" alt="Zoomed Image">
+      <div class="zoom-controls">
+        <button class="zoom-in">+</button>
+        <button class="zoom-out">−</button>
+        <select class="galleryColorSelect" id="galleryColorSelect" style="margin-top: 10px;">
+          <option value="">Select Color</option>
+        </select>
+      </div>
+      <div class="small-picture"></div>
+    </div>
+
+    <!-- GALLERY MODAL -->
+    <div id="galleryModal" class="modal" style="display: none;">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="galleryMainImage" src="" alt="Gallery Image">
+        <div id="galleryThumbnails" class="thumbnail-bar"></div>
+        <select id="galleryColorSelect">
+          <option>Select Color</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+          <option value="Gray">Gray</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!--Footer Section-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-center">
+          <div class="footer-logo-section"><img src="IMG/Logo/SutiYam-Logo.0.jpg" alt="SutiYam Logo"></div>
+          <div class="footer-contact">
+            <span>Account</span>
+            <div class="contact-links"><i class="fa-solid fa-circle-exclamation"></i> <a href="privacy-policy.html" target="_blank">Privacy Policy</a></div>
+            <div class="contact-links"><i class="fa-solid fa-truck"></i> <a href="delivery-policy.html" target="_blank">Delivery Policy</a></div>
+            <div class="contact-links"><i class="fa-solid fa-rotate-left"></i> <a href="returns_policy.html" target="_blank">Returns & Refunds</a></div>
+          </div>
+    
+          <div class="footer-contact">
+            <span>Contact Us</span>
+            <div class="contact-links"><i class="fa-solid fa-message"></i> <a href="https://wa.me/27794973132" target="_blank">27 79 497 3132</a></div>
+            <div class="contact-links"><i class="fa-solid fa-envelope"></i> <a href="mailto:sutiyam.orders@gmail.com">sutiyam.orders@gmail.com</a></div>
+            <div class="contact-links"><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=61573784650219" target="_blank">Facebook</a></div>
+            <div class="contact-links"><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/sutiyam2025" target="_blank">Instagram</a></div>
+          </div>
+          <p>SutiYam partners with selected fashion outlets and suppliers to bring you a curated collection of stylish, affordable formalwear. All items are inspected and quality-assured before delivery to ensure you receive nothing but the best!!!</p>
+        </div>
+    
+        <div class="footer-slogan-wrapper"><p class="footer-slogan">Elegance for Every Occasion ✨</p></div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <strong>SutiYam</strong> – Smart clothing | All rights reserved</p>
+          <section class="back-start">
+            <a href="#top" class="beginning" id="backToTop" aria-label="Back to Top">
+              <span class="read-back"><i class="fa-solid fa-arrow-up-from-bracket"></i> Back to Top</span>
+            </a>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="images.js"></script>
+    <script src="cart.js"></script>
+    <script src="WThrive.js"></script>
+    <script src="button.js"></script>
+  </body>
+</html>

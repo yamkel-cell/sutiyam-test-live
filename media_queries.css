@@ -1,0 +1,116 @@
+/* ==========================================================
+   TABLET BRIDGE (481px – 860px)
+   Prevent mobile rules from leaking upward
+   ========================================================== */
+@media (min-width: 481px) and (max-width: 860px) {
+
+  .header-wrapper {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    max-width: 140px;
+  }
+
+  .slogan {
+    font-size: 0.85rem;
+  }
+
+  .search-wrapper {
+    width: 60%;
+  }
+
+  .nav-bar {
+    width: auto;
+  }
+
+  .nav-links {
+    display: inline-block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .offered-product-container-col,
+  .latest-product-container-col {
+    width: 48%;
+  }
+
+  footer,
+  .contact-section {
+    font-size: 0.85rem;
+  }
+}
+
+/* ==========================================================
+   DESKTOP HARD RESET (861px+)
+   Fully restores original desktop layout
+   ========================================================== */
+@media (min-width: 861px) {
+
+  /* -------- HEADER -------- */
+  .header-wrapper {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: initial;
+    gap: initial;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .logo img {
+    max-width: initial;
+  }
+
+  .slogan {
+    font-size: initial;
+  }
+
+  /* -------- NAVIGATION -------- */
+  .menu-icon {
+    display: none !important;
+  }
+
+  .nav-bar {
+    position: static;
+    width: auto;
+  }
+
+  .nav-links {
+    display: inline-block;
+  }
+
+  .nav-links a {
+    display: inline;
+    padding: initial;
+    font-size: initial;
+    background: none;
+  }
+
+  /* -------- SEARCH -------- */
+  .search-wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  /* -------- PRODUCTS -------- */
+  .offered-product-container-col,
+  .latest-product-container-col {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  /* -------- FOOTER / CONTACT -------- */
+  footer,
+  .contact-section {
+    font-size: 1rem;
+  }
+
+}

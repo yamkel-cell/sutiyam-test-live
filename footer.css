@@ -1,0 +1,102 @@
+/*  Footer  */
+.footer {
+  background: #D3D3D3;
+  color: #000;
+  font-weight: 200;
+  padding: 10px 0 5px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.footer > .container > .footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer > .container > .footer-center > .footer-logo-section {
+  text-align: center;
+}
+
+.footer > .container > .footer-center > .footer-logo-section img {
+  border-radius: 10px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer > .container > .footer-center > .footer-contact {
+  text-align: left;
+}
+
+.footer > .container > .footer-center > .footer-contact > .contact-links {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.footer > .container > .footer-center > .footer-contact i {
+  color: #DAA520;
+  margin-right: 8px;
+}
+
+.footer > .container > .footer-center > .footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer > .container > .footer-center > .footer-contact a:hover {
+  font-style: oblique;
+  color: #DAA520;
+}
+
+.footer > .container > .footer-slogan-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  background-color: #111;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer > .container > .footer-slogan-wrapper > .footer-slogan {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #eee;
+  text-decoration: underline double #ff6600;
+  animation: slide-right 30s linear infinite;
+  padding-left: 100%;
+}
+
+.footer > .container > .footer-bottom {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer > .container > .footer-bottom a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.footer > .container > .footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer > .container > .footer-bottom > .back-start {
+  display: inline-block;
+  margin: 15px;
+  width: 15%;
+  font-size: x-large;
+}

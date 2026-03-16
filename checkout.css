@@ -1,0 +1,92 @@
+/*--- Checkout Style  ---*/
+
+.order-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-container h1, h2 {
+  text-align: center !important;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#order-form input,
+#order-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.order-summary {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.order-summary > #order-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#order-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#order-form > .checkout-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#order-form > .checkout-form-btn > .btn {
+  padding: 8px 16px;
+  background-color: #DAA520;
+  color: white;
+  text-decoration: none;
+  border: #DAA520 solid 2px;
+  border-bottom: #111 solid 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#order-form > .checkout-form-btn > .btn:hover {
+  background-color: #A0522D;
+  filter: brightness(100%);
+  font-variant-caps: petite-caps;
+}
+
+#order-form > .checkout-form-btn > .shopping-btn {
+  padding: 8px 16px;
+  background-color: #DAA520;
+  color: white;
+  text-decoration: none;
+  border: #DAA520 solid 2px;
+  border-bottom: #111 solid 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#order-form .checkout-form-btn > .shopping-btn:hover {
+  background-color: #A0522D;
+  filter: brightness(100%);
+  font-variant-caps: petite-caps;
+}

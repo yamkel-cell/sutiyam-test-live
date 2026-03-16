@@ -1,0 +1,241 @@
+h5 {
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+h5 i {
+  margin-left: 4px;
+  color: #555;
+}
+
+h5:hover {
+  color: #DAA520;
+  cursor: pointer;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 60px;
+    position: relative;
+    line-height: 60px;
+}
+
+.title::after {
+  content: '';
+  background: #DAA520;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.product-spacer {
+  height: 40px;
+}
+
+/* Make gallery fullscreen overlay */
+.images {
+  cursor: pointer;
+}
+
+.images:hover {
+  transform: translateY(-10px);
+}
+
+.fullscreen-gallery {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 15px;
+  top: 8px;
+  width: 97.5%;
+  height: 98.2%;
+  background-color: rgba(123, 118, 118, 0.95);
+  overflow-y: auto; /* allow scroll if content overflows */
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.fullscreen-gallery img#largeImage {
+  max-height: 80vh; /* Limit height to 80% of the viewport */
+  width: auto;
+  max-width: 100vw;
+  margin: 0 auto 20px auto;
+  display: block;
+  object-fit: contain;
+  user-select: auto;
+}
+
+
+.fullscreen-gallery .small-picture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.fullscreen-gallery .thumbnail {
+  flex-basis: 8%;
+  width: 12%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.fullscreen-gallery .thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.zoom-controls {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  display: flex;
+  gap: 10px;
+  z-index: 10000;
+}
+
+.zoom-controls > select {
+  width: 105px;
+  margin-right: -15px;
+}
+
+.zoom-controls button {
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.zoom-controls button:hover {
+  background-color: #ddd;
+}
+
+#largerImage {
+  cursor: grab;
+  user-select: auto;
+}
+
+.cont-spacer {
+  height: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Product Modal Styles */
+.product-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  overflow-y: auto;          /* allow scroll if content is taller than viewport */
+  padding: 20px;             /* add some spacing around modal */
+  box-sizing: border-box;    /* include padding in width/height calculations */
+}
+
+.product-modal-content {
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.product-modal-content img {
+  width: 70%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-thumbnails img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.modal-thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.modal-options select,
+.modal-options input {
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#modalAddToCart {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#modalAddToCart:hover {
+  background-color: #444;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+}
+
+.product-modal-content h2 {
+  margin-top: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
